@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="field f-1">
+        <div class="img">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/c0ee/09c8/fa7b4ae7297e2f0602ddb8e371859328?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aTlHCQRqyyPx37nwjpvme545Aa2BBA4hXLuPqBbu6rtLJv9zkysQjVCFfRKxE4zgZbpB7seIKxCj6D0fEwc5z6oHNCQm6RKShrDSsh8tWYd7C~M3L1FQxzu3koj6MBjqwiqpyjQ1jpPxuKY5jE9KRShCFwME4swZgX0jxXdrYJxm2WydOjjUj5mFBDYDPraqofewIKQ6LA081tHydAuHpXCGhtggC8mYUTeGOZFojvdyQkDDEcbanoJk6Pn8cNJ~EESyLJNR3JHdoqnjvxfowKOwPdRRmx8qPOgNTQSxCICdaSWlNZj5K047M5VGiuCvzYo2zA23P7ZB92ec4RpajQ__"
+            alt="img"
+          />
+        </div>
+
+        <h2>Payment info</h2>
+      </div>
+      <div class="field f-2">
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="   Enter your full name"
+        />
+        <div class="error"></div>
+      </div>
+      <div class="field f-3">
+        <label for="creditCard">Credit Card Number</label>
+        <input
+          type="text"
+          id="card"
+          class="number"
+          name="fullname"
+          placeholder=" 1234 1234 1234 1234"
+          maxlength="19"
+        />
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_113_7)">
+            <path
+              d="M12.25 2.33333H1.74998C1.10565 2.33333 0.583313 2.85566 0.583313 3.49999V10.5C0.583313 11.1443 1.10565 11.6667 1.74998 11.6667H12.25C12.8943 11.6667 13.4166 11.1443 13.4166 10.5V3.49999C13.4166 2.85566 12.8943 2.33333 12.25 2.33333Z"
+              stroke="#9EA8BD"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M0.583313 5.83333H13.4166"
+              stroke="#9EA8BD"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_113_7">
+              <rect width="14" height="14" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="error"></div>
+      </div>
+      <div class="field f-4">
+        <div class="form-1">
+          <label for="fullname">Exp Date</label>
+          <input
+            type="text"
+            class="date"
+            name="fullname"
+            placeholder=" MM/YY"
+            maxlength="5"
+            onkeyup="formatString(event);"
+          />
+          <div class="error"></div>
+
+        </div>
+        <div class="form-2">
+          <label for="fullname">CVV</label>
+
+          <input
+            type="text"
+            class="cvv"
+            maxlength="3"
+            name="fullname"
+            placeholder=" •••"
+          />
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_132_15)">
+              <path
+                d="M7.00002 12.8333C10.2217 12.8333 12.8334 10.2217 12.8334 7C12.8334 3.77834 10.2217 1.16666 7.00002 1.16666C3.77836 1.16666 1.16669 3.77834 1.16669 7C1.16669 10.2217 3.77836 12.8333 7.00002 12.8333Z"
+                fill="#BCC3D1"
+                stroke="#BCC3D1"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 9.33333V7"
+                stroke="url(#paint0_linear_132_15)"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 4.66666H7.00583"
+                stroke="url(#paint1_linear_132_15)"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_132_15"
+                x1="7.5"
+                y1="7"
+                x2="7.5"
+                y2="9.33333"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_132_15"
+                x1="7.00292"
+                y1="4.66666"
+                x2="7.00292"
+                y2="5.66666"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+              <clipPath id="clip0_132_15">
+                <rect width="14" height="14" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="error"></div>
+
+        </div>
+      </div>
+
+      <div class="field f-5">
+        <label for="gtgttggt">Zip Code</label>
+        <input
+          type="text"
+          name="fullname"
+          placeholder=" 90210"
+          class="zip"
+          maxlength="12"
+
+        />
+        <div class="error"></div>
+
+      </div>
+
+      <div class="field f-6">
+        <button type="submit">Confirm Payment</button>
+        <div class="success"></div>
+        <p>You verify that this info is correct</p>
+      </div>
+    </form>
+
+    <script src="form.js"></script>
+  </body>
+</html>

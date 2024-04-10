@@ -42,7 +42,7 @@ img {
   max-height: 100%;
 }
 
-.field.f-1 {
+.field.title {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -75,15 +75,15 @@ label {
   font-weight: 400;
 }
 
-.field.f-2{
+.field.name{
   margin-top: 24px;
 }
-.f-2 label {
+.name label {
   width: 72px;
   height: 18px;
 }
 
-.f-2 input {
+.name input {
   width: 100%;
   height: 40px;
   padding: 8px 12px 8px 12px;
@@ -94,17 +94,17 @@ label {
   box-shadow: 0px 4px 18px 0px #9ea8bd4f;
 }
 
-.field.f-3 {
+.field.cardNumber {
   position: relative;
 }
 
-.f-3 label {
+.cardNumber label {
   width: 141px;
   height: 19px;
   margin-bottom: 10px;
 }
 
-.f-3 input {
+.cardNumber input {
   width: 100%;
   height: 40px;
   padding: 8px 12px 8px 12px;
@@ -112,14 +112,14 @@ label {
   border: none;
   background-color: #e2e6ee;
 }
-.f-3 input::placeholder {
+.cardNumber input::placeholder {
   width: 156px;
   height: 19px;
   gap: 0px;
   opacity: 0px;
   color: #9ea8bd;
 }
-.f-3 svg {
+.cardNumber svg {
   position: absolute;
   right: 42px;
   bottom: 40px;
@@ -127,13 +127,13 @@ label {
 
 
 
-.field.f-4 {
+.field.date {
   max-width: 360px;
   display: flex;
   gap: 12px;
 }
 
-.f-4 input {
+.date input {
   width: 100%;
   height: 40px;
   padding: 8px 12px 8px 12px;
@@ -141,22 +141,22 @@ label {
   border: none;
   background-color: #e2e6ee;
 }
-.f-4 label {
+.date label {
   width: 63px;
   height: 19px;
   margin-bottom: 10px;
 }
 
-.f-4 {
+.date {
   position: relative;
 }
-.f-4 svg {
+.date svg {
   position: absolute;
   bottom: 40px;
   right: 42px;
 }
 
-.f-4 input::placeholder {
+.date input::placeholder {
   width: 120px;
   height: 19px;
   gap: 0px;
@@ -164,13 +164,13 @@ label {
   color: #9ea8bd;
 }
 
-.f-5 label {
+.zipCode label {
   width: 141px;
   height: 19px;
   margin-bottom: 10px;
 }
 
-.f-5 input {
+.zipCode input {
   width: 100%;
   height: 40px;
   padding: 8px 12px 8px 12px;
@@ -178,7 +178,7 @@ label {
   border: none;
   background-color: #e2e6ee;
 }
-.f-5 input::placeholder {
+.zipCode input::placeholder {
   width: 156px;
   height: 19px;
   gap: 0px;
@@ -226,29 +226,29 @@ button:disabled {
   margin-top: 8px;
 }
 
-.f-3.error input{
+.cardNumber.error input{
   border: 1px solid rgb(255, 0, 0);
 }
 
-.f-3.error div{
+.cardNumber.error div{
   color: red;
   margin-top: 5px;
 }
 
-.f-5.error input{
+.zipCode.error input{
   border: 1px solid rgb(255, 0, 0);
 }
 
-.f-5.error div{
+.zipCode.error div{
   color: red;
   margin-top: 5px;
 }
 
-.form-1.error input{
+.expDate.error input{
   border: 1px solid rgb(255, 0, 0);
 }
 
-.form-1.error div{
+.expDate.error div{
   color: red;
   margin-top: 5px;
 }
@@ -303,13 +303,13 @@ input.success{
     height: 13%;
   }
 
-  .field.f-1 {
+  .field.title {
     height: 16%;
     padding: 0;
     margin-top: 40px;
   }
 
-  .field.f-2 {
+  .field.name {
     margin-top: 40px;
   }
 
